@@ -34,3 +34,37 @@ html {
   padding: 10px;
   text-align: left;
 }
+
+.card-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item-content-title {
+  color: black;
+  display: flex;
+  font-size: 0.96rem;
+}
+
+.card-item-content-description {
+  color: #027acc  !important;
+  display: block;
+  font-size: 0.937rem;
+}
+
+.card-item-content-righ-trow {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.right-icon {
+  display: block;
+  width: 125px;
+  flex-shrink: 0;
+}
+
+.right-document {
+  font-weight: 500;
+  display: inline-block;
+}
