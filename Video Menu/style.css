@@ -1,0 +1,104 @@
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+#video-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  overflow: hidden;
+}
+
+#container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -10;
+}
+
+.dish {
+  width: 80%;
+  margin: 60px auto;
+}
+
+.header,
+.content {
+  padding: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#dish-name {
+  font-size: 2em;
+  color: white;
+}
+
+#dis-price {
+  color: #ffa500;
+  font-size: 2em;
+}
+
+.content {
+  display: flex;
+}
+
+.colunm {
+  width: 25%;
+  flex: left;
+}
+
+.dish-img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  color: #ffa500;
+}
+
+.content,
+.description {
+  color: white;
+}
+
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredients li::before {
+  content: "•";
+  color: #ffa500;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.info {
+  padding-top: 2.4em;
+}
+
+.tips p,
+.description p {
+  line-height: 2;
+  padding: 0;
+}
