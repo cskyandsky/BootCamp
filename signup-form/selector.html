@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .submitBtn:hover {
+        background-color: orange; /* Changes background color */
+        color: white;              /* Changes text color */
+        transform: scale(1.05); 
+        border: 1px;  
+        border-color: aquamarine;
+        
+
+      }
+
+      .input::placeholder {
+        font-size: 0.5 rem;
+        color: brown;
+        opacity: 0.5;
+      }
+
+      .input:focus {
+        background-color: aqua;
+      }
+
+      .input:focus + .label {
+        color: blue;
+        font-weight: bold;
+      }
+
+      .input:not(:placeholder-shown) + .label {
+        color:brown;
+        display: block;
+        font-size: 0.9em;
+        transition: 0.3s;
+}
+
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Search">
+    <p class="p-description">
+      If you wish to attend this concert, please submit your request
+    </p>
+    <button class="submitBtn">Submit</button>
+   
+    <input type="text" class="input" placeholder="Enter your name" />
+    <label class="label">Name</label>
+
+
+    
+  </body>
+</html>
+
