@@ -1,0 +1,63 @@
+.flex-container {
+  display:flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow:5px 5px 15px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+.senario-title {
+  background-color: azure;
+  display: flex;
+  width: 640px;
+  height: 100px;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  border: none;
+}
+
+.border-b {
+border-bottom-width: 1px;
+
+}
+
+.description {
+  flex-direction: column;
+  width: fit-content;
+
+}
+
+.button-1 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(29, 119, 242);
+  flex-direction: row;
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 400px;
+  height: 40px;
+}
+
+.button-1 :hover {
+  background-color: lightblue;
+}
+
+
+  
+
+
