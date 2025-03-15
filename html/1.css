@@ -1,22 +1,27 @@
 .flex-container {
   display:flex;
   justify-content: space-between;
+  background-color: #fff;
   align-items: center;
   width: 600px;
   height: 600px;
   background-color: white;
   padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
+  margin-bottom: 20px;
+  border-radius: 12px;
   box-shadow:5px 5px 15px rgba(0, 0, 0, 0.1);
   flex-direction: column;
 }
 
 .senario-title {
+  background-color: azure;
   display: flex;
+  width: 640px;
+  height: 100px;
   flex-direction: column;
   text-align: center;
-  width: fit-content;
+  border-radius: 12px 12px 0 0;
+  border: none;
 }
 
 .description {
@@ -26,12 +31,29 @@
 }
 
 .challenge-button {
-  background-color: lightblue;
+  display: flex;
+  background-color: rgb(29, 119, 242);
   flex-direction: row;
-  width: 150px;
-  margin: 8px;
-  padding: 6px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  width: 400px;
+  height: 40px;
 }
+
+.challenge-button :hover {
+  background-color: lightblue;
+}
+
+
   
 
 
