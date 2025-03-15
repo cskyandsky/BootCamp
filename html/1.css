@@ -24,18 +24,23 @@
   border: none;
 }
 
+.border-b {
+border-bottom-width: 1px;
+
+}
+
 .description {
   flex-direction: column;
   width: fit-content;
 
 }
 
-.challenge-button {
+.button-1 {
   display: flex;
   background-color: rgb(29, 119, 242);
   flex-direction: row;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -43,13 +48,12 @@
   padding-right: 20px;
   border-radius: 10px;
   border: none;
-  color: black;
   cursor: pointer;
   width: 400px;
   height: 40px;
 }
 
-.challenge-button :hover {
+.button-1 :hover {
   background-color: lightblue;
 }
 
