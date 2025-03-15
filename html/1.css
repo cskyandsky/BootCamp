@@ -37,9 +37,9 @@ border-bottom-width: 1px;
 
 .button-1 {
   display: flex;
+  justify-content: center;
   background-color: rgb(29, 119, 242);
   flex-direction: row;
-  text-align: center;
   font-size: 20px;
   color: white;
   padding-top: 10px;
