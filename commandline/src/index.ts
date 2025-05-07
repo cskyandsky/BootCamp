@@ -1,13 +1,12 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import * as z from "zod";
+import { z } from "zod";
 import { runCommand } from "./commond.js";
 
-
-// Create server instance 
-const server = new McpServer ({
+// Create server instance
+const server = new McpServer({
   name: "commandline",
-  version: "1.0.0"
+  version: "1.0.0",
 });
 
 interface ExecResponse {
@@ -21,17 +20,17 @@ server.tool(
   {
     cmd: z.string().describe("The command to execute in the shell"),
   },
-  async ({cmd}) => {
+  async ({ cmd }) => {
     const response = await runCommand(cmd);
     return {
       content: [
         {
-          type:"text",
+          type: "text",
           text: `stdout: \n${response.stdout}`,
         },
         {
           type: "text",
-          text:`stderr: \n${response.stderr}`,
+          text: `stderr: \n${response.stderr}`,
         },
       ],
     };
@@ -46,6 +45,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error("Fatal error in main():", error)
-  process.exit(1)
+  console.error("Fatal error in main():", error);
+  process.exit(1);
 });

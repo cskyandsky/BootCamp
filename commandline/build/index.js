@@ -1,11 +1,11 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import * as z from "zod";
+import { z } from "zod";
 import { runCommand } from "./commond.js";
-// Create server instance 
+// Create server instance
 const server = new McpServer({
     name: "commandline",
-    version: "1.0.0"
+    version: "1.0.0",
 });
 server.tool("run-command", "Executes a shell command", {
     cmd: z.string().describe("The command to execute in the shell"),

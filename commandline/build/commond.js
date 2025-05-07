@@ -27,3 +27,9 @@ export async function runCommand(cmd) {
         return { stdout: "", stderr: errorMessage };
     }
 }
+const command = 'aaaaaaa';
+const response = await runCommand(command);
+console.log(response.stdout);
+console.log("---------");
+console.error(response.stderr);
+console.log("---------");
